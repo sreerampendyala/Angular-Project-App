@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Recipe } from '../recipe.model';
-import { ingredient } from 'src/app/shared/ingredient.model';
 import { RecipeService } from '../recipe.service';
 import { ActivatedRoute, Params } from '@angular/router';
 
@@ -29,5 +28,4 @@ export class RecipeDetailComponent implements OnInit {
   onToShoppingListClicked() {
     this.recipeService.addDetailToShoppingList(this.recipe.ingredients)
   }
-
 }
